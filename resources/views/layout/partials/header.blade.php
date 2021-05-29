@@ -15,11 +15,17 @@
     <link rel="shortcut icon" href="{{ asset('effar/img/favicon.png') }}" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    @if(app()->getLocale() == 'ar')
+        <link href="{{ asset('effar/css/font-ar.css')}}" rel="stylesheet">
+    @else
+        <link href="{{ asset('effar/css/font-en.css')}}" rel="stylesheet">
+    @endif
+
+    {{-- <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> --}}
     <link rel="stylesheet" href="{{ asset('effar/css/plugins.css') }}" />
     <link rel="stylesheet" href="{{ asset('effar/css/style.css') }}" />
 
