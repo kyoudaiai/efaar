@@ -2,14 +2,12 @@
 
 @section('hero_section')
      <!-- ==================== Start Slider ==================== -->
-
-     <header class="freelancer sub-bg valign bg-img parallaxie" data-background="{{ asset('effar/img/slid/freelancer.jpg') }}" data-overlay-dark="4">
-        <div class="container">
-                <video autoplay muted loop playbackRate="0.5" id="myVideo">
-                    <source src="{{ asset('effar/img/front_movie.mp4') }}" type="video/mp4">
-                </video>
-        </div>
+     <header class="freelancer sub-bg valign bg-img parallaxie" data-background="{{ asset('effar/img/slid/freelancer.jpg') }}">
+		<video autoplay muted loop id="myVideo">
+            <source src="{{ asset('effar/img/front_movie.mp4') }}" type="video/mp4">
+		</video>
     </header>
+
 
 <!-- ==================== End Slider ==================== -->
 @endsection
